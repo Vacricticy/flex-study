@@ -1,0 +1,66 @@
+.items1 {
+    height: 500px;
+    background-color: #1a2a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    width: 300px;
+    height: 300px;
+    background-color: #bbccdd;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* 当flex-direction设置为column时，容器的六大属性可以把脖子歪过来算 */
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.column {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.point {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+
+/* .item1:nth-child(2) {
+    align-self: flex-end;
+} */
+
+.items2 {
+    height: 200px;
+    display: flex;
+    background-color: #2a3a4a;
+}
+
+.item2 {
+    flex: 1;
+    height: 50px;
+    background-color: white;
+    margin: 10px;
+}
+
+.item21 {
+    flex: 0 0 80%;
+}
+
+.item24 {
+    flex: 0 0 50%;
+}
+
+.item25 {
+    flex: 0 0 10%;
+}

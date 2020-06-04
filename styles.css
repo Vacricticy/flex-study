@@ -1,0 +1,135 @@
+.items {
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap-reverse;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 2px;
+}
+
+.items2 {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+}
+
+.item2 {
+    width: 50px;
+    height: 20px;
+    background-color: blue;
+    margin: 2px;
+}
+
+.items3 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.item31 {
+    width: 100px;
+    height: 30px;
+    background-color: aqua;
+    align-self: flex-start;
+}
+
+.item32 {
+    width: 100px;
+    height: 150px;
+    background-color: aqua;
+}
+
+.item33 {
+    width: 100px;
+    height: 20px;
+    background-color: aqua;
+}
+
+.item34 {
+    width: 100px;
+    height: 60px;
+    background-color: aqua;
+}
+
+
+/* .box {
+    box-sizing: border-box;
+    padding-top: 10px;
+} */
+
+.items4 {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: black;
+    align-content: flex-start;
+}
+
+.item4 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 2px;
+}
+
+.order1 {
+    background-color: brown;
+    order: 2;
+    flex-grow: 5;
+}
+
+.order2 {
+    background-color: aqua;
+    order: 6;
+    flex-grow: 1;
+    /* flex-basis: 200px; */
+}
+
+.order3 {
+    background-color: yellow;
+    order: -5;
+    flex-grow: 1;
+}
+
+.items5 {
+    height: 200px;
+    background-color: rgb(163, 53, 173);
+    display: flex;
+    /* justify-content: center; */
+}
+
+.item5 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(134, 209, 85);
+    margin: 5px;
+    /* flex-shrink: 0; -->所有的元素都会按照原样式显示，会直接撑爆原屏幕的尺寸 */
+}
+
+.item51:hover {
+    flex-shrink: 2;
+    background-color: yellow;
+}
+
+.item52:hover {
+    flex-shrink: 0;
+    background-color: yellow;
+}
+
+.item53:hover {
+    flex-shrink: 0;
+    background-color: yellow;
+}
+
+.item54:hover {
+    flex-shrink: 0;
+    background-color: yellow;
+}

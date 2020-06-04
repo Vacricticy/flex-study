@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <link rel="stylesheet" href="styles2.css" />
+    <!-- <script type="text/javascript" src="less.min.js"></script> -->
+</head>
+
+<body>
+    <div id="app" class="app">
+        <div class="items1">
+            <div class="item1">
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+        </div>
+        <div class="items2">
+            <div class="item2 item21"></div>
+            <div class="item2 item22"></div>
+            <div class="item2 item23"></div>
+        </div>
+        <div class="items2">
+            <div class="item2 item24"></div>
+            <div class="item2 item25"></div>
+            <div class="item2 item26"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data() {
+            return {
+                message: 222
+            }
+        }
+    })
+</script>

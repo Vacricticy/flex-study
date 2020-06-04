@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <script type="text/javascript" src="less.min.js"></script> -->
+</head>
+
+<body>
+    <div id="app" class="app">
+        <div class="items">
+            <div class="item" v-for="item in 30">{{item}}</div>
+        </div>
+        <div class="items2">
+            <div v-for="item in 3" class="item2"></div>
+        </div>
+        <div class="items3">
+            <div class="item31 box">111</div>
+            <div class="item32 box">222</div>
+            <div class="item33 box">333</div>
+            <div class="item34 box">444</div>
+        </div>
+        <div class="items4">
+            <div class="item4 order1">红</div>
+            <div class="item4 order2">青</div>
+            <div class="item4 order3">黄</div>
+            <div class="item4" v-for="item in 40">{{item}}</div>
+        </div>
+        <div class="items5">
+            <div class="item5 item51"></div>
+            <div class="item5 item52"></div>
+            <div class="item5 item53"></div>
+            <div class="item5 item54"></div>
+            <div class="item5" v-for="item in 20"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data() {
+            return {
+                message: 222
+            }
+        }
+    })
+</script>

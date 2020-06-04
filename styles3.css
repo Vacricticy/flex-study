@@ -1,0 +1,44 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
+    /* ↑ ????? */
+}
+
+header,
+footer {
+    height: 100px;
+    background-color: #bbb;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+}
+
+nav {
+    flex: 0 0 20em;
+    background-color: red;
+}
+
+main {
+    flex: 1;
+}
+
+aside {
+    flex: 0 0 20em;
+    background-color: yellow;
+}
+
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    nav,
+    main,
+    aside {
+        flex: auto
+    }
+}
